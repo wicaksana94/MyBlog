@@ -1,4 +1,4 @@
-function IndexArticle() {
+function Article() {
   return (
     <div>
       <p>Article</p>
@@ -6,4 +6,4 @@ function IndexArticle() {
   );
 }
 
-export default IndexArticle;
+export default Article;

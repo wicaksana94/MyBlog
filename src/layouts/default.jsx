@@ -1,15 +1,17 @@
-import Home from "./home/index";
 import Header from "./header";
 import Footer from "./footer";
-import Article from "./articles/index";
+import Hello from "./hello";
+import Article from "./article";
+import Introduction from "./introduction";
 
 function LayoutDefault() {
   return (
-    <div className="relative min-h-screen" id="default-layout">
+    <div className="min-h-screen" id="default-layout">
       <Header />
-      <Home />
+      <Hello />
+      <Introduction />
       <Article />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
