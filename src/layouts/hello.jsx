@@ -33,7 +33,7 @@ function Hello() {
             autoplay
             loop
             src="https://assets7.lottiefiles.com/packages/lf20_o6spyjnc.json"
-            className="sm:w-3/4 sm:h-1/4 md:w-100 md:h-100"
+            className="xs:w-40 sm:w-3/4 sm:h-1/4 md:w-100 md:h-100"
           >
             <Controls
               visible={false}
@@ -42,45 +42,23 @@ function Hello() {
           </Player>
         </div>
       </div>
-      <div
-        className="animate-bounce"
-        style={{
-          position: "absolute",
-          left: "0px",
-          right: "0px",
-          bottom: "3rem",
-          marginLeft: "auto",
-          marginRight: "auto",
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <p>Scroll down</p>
-      </div>
-      <div
-        className="animate-bounce"
-        style={{
-          position: "absolute",
-          left: "0px",
-          right: "0px",
-          bottom: "1rem",
-          marginLeft: "auto",
-          marginRight: "auto",
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <svg
-          className="w-6 h-6 text-amber-900 w-100"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-        </svg>
+      <div className="scroll-down-section">
+        <div className="absolute flex justify-center mr-auto ml-auto animate-bounce bottom-6 lg:bottom-10 right-0 left-0">
+          <p className="xs:text-xs sm:text-sm">Scroll down</p>
+        </div>
+        <div className="absolute flex justify-center mr-auto ml-auto animate-bounce bottom-3 lg:bottom-4 right-0 left-0">
+          <svg
+            className="xs:w-3 xs:h-3 lg:w-5 lg:h-5 text-amber-900 w-100"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </div>
       </div>
     </div>
   );
